@@ -12,6 +12,7 @@
 <button class='btn btn-primary' id='balance'>Balance</button>
 
 <script>
+	//provider Ropsten, da keine lokale Verbindung mit Metamask möglich ist
     $(document).on('click', '#balance', async function() {
         const provider = new ethers.getDefaultProvider('ropsten')
         const abi = [
